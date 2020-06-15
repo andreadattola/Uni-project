@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE TEI SYSTEM "myTEI.dtd">
+<TEI>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Cartolina 086 del progetto d'esame</title>
+        <sponsor>Università di Pisa</sponsor>
+        <respStmt>
+          <resp>Studenti di informatica umanistica</resp>
+          <name>S.Waldmann, A.Dattola</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          Prima versione, esame di Codifica dei Testi
+        </edition>
+      </editionStmt>
+      <extent>
+        <measure unit="MiB" quantity="4.2">
+          4 Megabytes
+        </measure>
+        <measure unit="pages" quantity="2">
+          Fronte e Retro
+        </measure>
+      </extent>
+      <publicationStmt>
+        <publisher>Università di Pisa</publisher>
+        <date>2018-11-15</date>
+        <availability status="restricted">
+          <p></p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <p>
+          Raccolta di cartoline di corrispondeza personale della prima guerra mondiale.
+        </p>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Cartolina WW1</title>
+          <author>Giovannino (Soldato)</author>
+          <publisher>Giovannino</publisher>
+          <date>1918</date>
+        </bibl>
+        <listPerson>
+          <head></head>
+          <person xml:id="giovannino">
+            <persName>
+              Giovannino
+            </persName>
+            <sex value="M">Male</sex>
+          </person>
+          <person xml:id="oliva">
+            <persName>
+              Oliva Turtura
+            </persName>
+            <sex value="F">Female</sex>
+          </person>
+          <person>
+          <persName ref="https://www.wikidata.org/wiki/Q43128771">
+            Tito Corbella
+          </persName>
+          <sex value="M">Male</sex>
+        </person>
+        <relation type="personal" name="fiancees" mutual="#giovannino #oliva"/>
+        <relation type="professional" name="artist" mutual="#tito #front"/>
+        </listPerson>
+        <listPlace>
+          <place type="city" xml:id="milano">
+            <placeName ref="https://www.wikidata.org/wiki/Q490">
+              Milano
+            </placeName>
+          </place>
+        </listPlace>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="it">italiano</language>
+      </langUsage>
+      <textDesc n="postcard">
+        <channel mode="w">stampato</channel>
+        <constitution type="single"/>
+        <derivation type="original"/>
+        <domain type="post"/>
+        <factuality type="fact"/>
+        <interaction type="none" active="singular" passive="single"/>
+        <preparedness type="none"/>
+        <purpose type="communication" degree="high"/>
+      </textDesc>
+      <settingDesc>
+        <setting>
+          <name>Modena, Italy</name>
+          <time>World War 1</time>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+  </teiHeader>
+  <text xml:id="content">
+    <body>
+      <div type="postcard">
+        <div facs="#right" type="right">
+          <ab facs="francobollo" type="printed">
+            <stamp>
+              <note>
+                Produzione italiana
+              </note>
+            </stamp>
+          </ab>
+          <ab facs="numero_scritto_a_mano" type="handwritten">
+            <num type="cardinal" value="88">
+              88
+            </num>
+            <desc>Nota a mano, probabilmente non dell'autore originale</desc>
+          </ab>
+        </div>
+        <div type="center">
+          <ab facs="corpo" type="handwritten">
+              <name type="person" ref="#oliva">Oliva</name> mia - In questo momento ti sono vicino piu di quanto tu possa capirlo - Sento sul
+              <unclear reason="illegible">
+                blando
+              </unclear>
+              abbaglio della sera il tuo assente affetto e mi ci rifugio - Provo la dolce sensazione della reminiscenza, che come una mamma faticosa e buona rievoca il
+              <desc>probabilmente scritto Fagito e nel corso del tempo la scrittura si è modificata vagito assumendo lo stesso significato
+              </desc>
+              vagito felice della
+              <unclear reason="illeggibile">
+                <desc>
+                  forse fanciullezza>
+                </desc>
+                fanciullezza
+              </unclear>
+              trascorsa,
+              <unclear reason="illiggibile">
+                <desc>
+                  forse passi
+                </desc>
+                passi
+              </unclear>
+              ad rievocare l'avvenire del figlio, cosi del nostro amore: alle soavità fregate, alle delicatezze sentimentali<damage agent="water">
+                per
+              </damage>
+              , ai dolci dolori sofferti, ci aspettano altre gioie piu intime, affetto piu
+              <unclear reason="illeggibile">
+                caldi
+              </unclear>
+              , amore, adorazione, sensazione. E nuovamente sento di amarti tanto, sento, oliva casa. In me
+              <unclear reason="illeggibile">
+                *</unclear>, in mia
+              <unclear reason="illeggibile">
+                *</unclear>, in mia bacio tutto l'amore
+              <unclear reason="illeggibile">
+                *</unclear>
+              mia, la mia vita tutta in eterno <name type="person" ref="#giovannino" rend="underline">GIOVANNINO</name>
+          </ab>
+        </div>
+        <div facs="#left" type="left">
+          <ab facs="copyright" type="printed">
+            <stamp>
+              Proprietá artistica riservata <choice><abbr>Uff.</abbr><expan>Ufficio</expan></choice> <choice><abbr>Rev.</abbr></choice> Stampa <choice><abbr>N.</abbr><expan>Numero</expan></choice> <num type="cardinal" value="737">737</num> <name type="place" ref="#milano">Milano</name>, S-<date>5-917</date>
+            </stamp>
+          </ab>
+        </div>
+      </div>
+    </body>
+  </text>
+  <facsimile>
+    <front>
+      <figure facs="front_figure" type="artwork">
+        <head>Illustrazione sconosciuta</head>
+        <figDesc>
+          Ritratto in primo piano di una donna
+        </figDesc>
+      </figure>
+      <figure facs="artist_signature" type="artwork">
+        <signed>
+          T.Corbella
+        </signed>
+      </figure>
+      <ab facs="dedica_fronte" type="handwritten">
+        <lb/>
+        Saluti affettuosi a tutti
+        <lb/>
+        <name type="person">Giovannino</name>
+      </ab>
+    </front>
+    <surface xml:id="fronte" type="fronte">
+      <graphic url='7694-088F.jpg' width='1024px' height='1641px'/>
+      <zone xml:id="front_figure" points = '1,1054 89,1054 87,1026 331,1027 368,1035 445,1040 441,1062 398,1059 388,1073 341,1061 104,1061 2,1058 1,1519 52,1518 57,1494 148,1433 199,1429 224,1449 277,1451 358,1456 395,1420 463,1409 476,1441 487,1452 634,1459 669,1457 722,1434 807,1441 864,1452 893,1472 899,1503 779,1496 784,1517 802,1533 867,1541 945,1564 960,1607 920,1634 825,1628 532,1613 487,1630 467,1620 471,1603 265,1596 256,1578 284,1569 291,1535 81,1532 55,1524 2,1525 2,1640 1023,1640 1022,5 3,4' />
+      <zone xml:id="artist_signature" points = '89,1028 327,1029 368,1038 440,1044 437,1058 393,1057 384,1069 337,1058 92,1058 ' />
+      <zone xml:id="dedica_fronte" points = '57,1509 70,1501 88,1490 114,1485 139,1469 158,1457 180,1440 194,1438 201,1443 198,1459 202,1468 219,1472 244,1473 279,1471 297,1477 318,1487 341,1492 374,1468 398,1439 424,1431 461,1421 468,1444 465,1458 486,1465 513,1467 550,1467 575,1474 585,1480 614,1481 641,1481 646,1470 668,1465 703,1459 718,1447 736,1440 751,1447 796,1451 832,1455 850,1458 865,1464 891,1478 892,1492 871,1500 854,1504 845,1514 841,1528 853,1547 885,1553 921,1575 957,1591 953,1608 938,1621 923,1637 897,1640 545,1609 530,1616 517,1627 502,1637 478,1639 469,1630 480,1621 489,1610 469,1609 267,1599 265,1588 284,1574 297,1557 311,1531 114,1535 72,1536 57,1528' />
+    </surface>
+    <surface xml:id="retro" type="retro">
+      <graphic url='7694-088R.jpg' width='1644px' height='1020px'/>
+      <zone xml:id="corpo" points='29,10 29,82 91,85 104,487 213,489 210,552 102,558 85,1012 1625,1010 1630,261 1396,262 1373,19'/>
+      <zone xml:id="numero_scritto_a_mano" points='107,495 203,495 204,543 106,551'/>
+      <zone xml:id="francobollo" points='1383,17 1407,249 1622,254 1621,19'/>
+      <zone xml:id="copyright" points='38,86 83,90 98,517 81,985 45,987'/>
+    </surface>
+  </facsimile>
+</TEI>

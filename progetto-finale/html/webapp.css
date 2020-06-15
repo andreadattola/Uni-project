@@ -1,0 +1,14 @@
+select {
+  float: left;
+  margin: auto;
+}
+h4 {
+  float: left;
+  margin: auto;
+}
+body {
+  background-image: url("background.jpg");
+  background-size: cover;
+  color: Lavender;
+  font-family: Sans-Serif;
+}

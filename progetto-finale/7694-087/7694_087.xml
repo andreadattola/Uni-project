@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE TEI SYSTEM "myTEI.dtd">
+<TEI>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Cartolina 086 del progetto d'esame</title>
+        <sponsor>Università di Pisa</sponsor>
+        <respStmt>
+          <resp>Studenti di informatica umanistica</resp>
+          <name>S.Waldmann, A.Dattola</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          Prima versione, esame di Codifica dei Testi
+        </edition>
+      </editionStmt>
+      <extent>
+        <measure unit="MiB" quantity="4.2">
+          4 Megabytes
+        </measure>
+        <measure unit="pages" quantity="2">
+          Fronte e Retro
+        </measure>
+      </extent>
+      <publicationStmt>
+        <publisher>Università di Pisa</publisher>
+        <date>2018-11-15</date>
+        <availability status="restricted">
+          <p></p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <p>
+          Raccolta di cartoline di corrispondeza personale della prima guerra mondiale.
+        </p>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Cartolina WW1</title>
+          <author>Giovannino (Soldato)</author>
+          <publisher>Giovannino</publisher>
+          <date>30/06/1917</date>
+        </bibl>
+        <listPerson>
+          <head></head>
+          <person xml:id="giovannino">
+            <persName>
+              Giovannino
+            </persName>
+            <sex value="M">Male</sex>
+          </person>
+          <person xml:id="oliva">
+            <persName>
+              Oliva Turtura
+            </persName>
+            <sex value="F">Female</sex>
+          </person>
+          <person xml:id="tito">
+            <persName ref="https://www.wikidata.org/wiki/Q43128771">
+              Tito Corbella
+            </persName>
+            <sex value="M">Male</sex>
+          </person>
+          <relation type="personal" name="fiancees" mutual="#giovannino #oliva"/>
+          <relation type="professional" name="artist" mutual="#tito #front"/>
+        </listPerson>
+        <listPlace>
+          <place type="city" xml:id="milano">
+            <placeName ref="https://www.wikidata.org/wiki/Q490">
+              Milano
+            </placeName>
+          </place>
+          <place>
+            <placeName type="city" xml:id="modena" ref="https://www.wikidata.org/wiki/Q279">
+              Modena
+            </placeName>
+          </place>
+        </listPlace>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="it">italiano</language>
+      </langUsage>
+      <textDesc n="postcard">
+        <channel mode="w">stampato</channel>
+        <constitution type="single"/>
+        <derivation type="original"/>
+        <domain type="post"/>
+        <factuality type="fact"/>
+        <interaction type="none" active="singular" passive="single"/>
+        <preparedness type="none"/>
+        <purpose type="communication" degree="high"/>
+      </textDesc>
+      <settingDesc>
+        <setting>
+          <name>Modena, Italy</name>
+          <time>World War 1</time>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+  </teiHeader>
+  <text xml:id="content">
+    <body>
+      <div type="postcard">
+        <div facs="upper" type="upper">
+          <ab facs="francobollo" type="printed">
+            <stamp type="postmark">spazio bianco
+              <mentioned>
+                produzione italiana
+              </mentioned>
+            </stamp>
+          </ab>
+          <ab facs="numero_scritto_a_mano" type="handwritten">
+            <num type="cardinale">
+              87
+            </num>
+            <desc>Nota a mano, probabilmente non dell'autore originale</desc>
+          </ab>
+        </div>
+        <div type="center">
+          <ab facs="corpo" type="handwritten">
+            <lb/>
+            <name type="place" ref="#modena">Modena</name>,li <date>30/6 - 1917</date>
+            <lb/>
+            <name type="person" ref="#giovannino">Giovannino
+            </name>
+          </ab>
+        </div>
+        <div type="left">
+          <ab facs="copyright" type="printed">
+            <stamp>
+              <lb/>
+              Proprieta artistica riservata - <choice><abbr>Uff. </abbr><expan>Ufficio</expan></choice><choice><abbr>Rev. </abbr></choice>Stampa <choice><abbr>N. </abbr><expan>Numero</expan></choice><num type="cardinale" value="894">894</num> - <name type="place" ref="#milano">Milano</name>, <date>25-5-1917</date>
+            </stamp>
+          </ab>
+        </div>
+        <div type="lower">
+          <ab facs="numero_stampato" type="handwritten">
+            <stamp>
+              <num value="232 3">
+                232 3
+              </num>
+            </stamp>
+          </ab>
+        </div>
+      </div>
+    </body>
+  </text>
+  <facsimile>
+    <front>
+      <figure facs="front_figure" type="artwork">
+        <head>Illustrazione sconosciuta</head>
+        <figDesc>
+          Ritratto in primo piano di una donna
+        </figDesc>
+      </figure>
+      <figure facs="artist_signature" type="artwork">
+        <signed>
+          <name type="person">T.Corbella</name>
+        </signed>
+      </figure>
+    </front>
+    <surface xml:id="fronte" type="fronte">
+      <graphic url='7694-087F.jpg' width='1024px' height='1630px'/>
+      <zone xml:id="front_figure" points='2,1029 295,1013 315,1077 227,1059 2,1073 3,1629 1021,1629 1022,6 2,6'/>
+      <zone xml:id="artist_signature" points='3,1034 215,1023 285,1026 307,1073 222,1056 7,1069'/>
+    </surface>
+    <surface xml:id="retro" type="retro">
+      <graphic url='7694-087R.jpg' width='1631px' height='1035px'/>
+      <zone xml:id="copyright" points='44,69 71,69 73,980 45,978'/>
+      <zone xml:id="numero_scritto_a_mano" points='101,25 198,20 200,90 98,91'/>
+      <zone points='1347,69 1346,336 1581,333 1580,64'/>
+      <zone
+        xml:id="corpo"
+        points='301,46 242,296 224,462 85,491 84,526 365,529 254,672 325,688 506,617 666,595 680,524 1162,592 1476,696 1541,666 1249,554 948,495 1215,502 1370,521 1363,489 1230,460 1161,406 1090,366 1126,174 1246,164 1340,77 1339,34 344,25'/>
+      <zone xml:id="numero_stampato" points='728,968 805,968 809,992 729,992'/>
+    </surface>
+  </facsimile>
+</TEI>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE TEI SYSTEM "myTEI.dtd">
+<TEI>
+  <teiHeader xml:lang="it">
+    <fileDesc>
+      <titleStmt>
+        <title>Cartolina 086 del progetto d'esame</title>
+        <sponsor>Università di Pisa</sponsor>
+        <respStmt>
+          <resp>Studenti di informatica umanistica</resp>
+          <name>S.Waldmann, A.Dattola</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          Prima versione, esame di Codifica dei Testi
+        </edition>
+      </editionStmt>
+      <extent>
+        <measure unit="MiB" quantity="4.2">
+          4 Megabytes
+        </measure>
+        <measure unit="pages" quantity="2">
+          Fronte e Retro
+        </measure>
+      </extent>
+      <publicationStmt>
+        <publisher>Università di Pisa</publisher>
+        <date>2018-11-15</date>
+        <availability status="restricted">
+          <p></p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt>
+        <p>
+          Raccolta di cartoline di corrispondeza personale della prima guerra mondiale.
+        </p>
+      </seriesStmt>
+      <sourceDesc>
+        <bibl>
+          <title>Cartolina WW1</title>
+          <author>Giovannino (Soldato)
+          </author>
+          <publisher>Giovannino</publisher>
+          <date>01/10/1917</date>
+        </bibl>
+        <listPerson>
+          <head></head>
+          <person xml:id="giovannino">
+            <persName>
+              Giovannino
+            </persName>
+            <sex value="M">Male</sex>
+          </person>
+          <person xml:id="oliva">
+            <persName>
+              Oliva Turtura
+            </persName>
+            <sex value="F">Female</sex>
+          </person>
+          <person xml:id="vittorioemanuele2" >
+            <persName ref="https://www.wikidata.org/wiki/Q168691">
+              Vittorio Emanuele II
+            </persName>
+            <sex value="F">Male</sex>
+          </person>
+          <relation type="personal" name="fiancees" mutual="#giovannino #oliva"/>
+          <relation type="artwork" name="mentioned" mutual="#vittorioemanuele2 #postmark"/>
+        </listPerson>
+        <listPlace>
+          <place type="city" xml:id="milano">
+            <placeName ref="https://www.wikidata.org/wiki/Q490">
+              Milano
+            </placeName>
+          </place>
+          <place type="city" xml:id="ravenna">
+            <placeName ref="https://www.wikidata.org/wiki/Q13364">
+              Ravenna
+            </placeName>
+          </place>
+          <place type="city" xml:id="modena">
+            <placeName ref="https://www.wikidata.org/wiki/Q279">
+              Modena
+            </placeName>
+          </place>
+          <place type="city" xml:id="venezia">
+            <placeName ref="https://www.wikidata.org/wiki/Q641">
+              Venezia
+            </placeName>
+          </place>
+        </listPlace>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="it">italiano</language>
+      </langUsage>
+      <textDesc n="postcard">
+        <channel mode="w">stampato</channel>
+        <constitution type="single"/>
+        <derivation type="original"/>
+        <domain type="post"/>
+        <factuality type="fact"/>
+        <interaction type="none" active="singular" passive="single"/>
+        <preparedness type="none"/>
+        <purpose type="communication" degree="high"/>
+      </textDesc>
+      <settingDesc>
+        <setting>
+          <name>Modena, Italy</name>
+          <time>World War 1</time>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+  </teiHeader>
+  <text xml:id="content">
+    <body>
+      <div type="postcard">
+        <div type="upper">
+          <ab facs="notamano" type="handwritten">
+            <note type="handnote" place="margin">
+              <num value="86">
+                86
+              </num>
+              <desc>Nota a mano, probabilmente non dell'autore originale</desc>
+            </note>
+          </ab>
+          <ab facs="descrizione" type="printed">
+            <stamp rend="uppercase">
+              <num value="11">XI</num> esposizione internazionale d'arte della citta di <name type="place" ref="#venezia">Venezia</name> - <num value="1914">MCMXIV</num>
+            </stamp>
+          </ab>
+          <ab facs="francobollo" type="printed">
+            <stamp type="postmark">Silhouette of <name type="person" ref="#vittorioemanuele2">Vittorio Emanuele II</name> Poste italiane | centesimi
+              <desc>
+                5 cent
+              </desc>
+            </stamp>
+          </ab>
+          <ab facs="stampo_postale" type="printed">
+            <stamp type="postage">Circular mark with some non interpretable letters and
+              <unclear>
+                <gap reason="degradazione">
+                  <desc>forse FERR</desc>
+                </gap>
+                <date when="1918-xx-xx">
+                  <gap reason="illeggibile" extent="6">
+                    <desc>forse 10.17.</desc>
+                  </gap>18</date>
+              </unclear>
+            </stamp>
+          </ab>
+        </div>
+        <div type="left">
+          <ab facs="messaggio" type="handwritten">
+            <lb/>
+            <name type="place" ref="#modena">Modena</name>, li
+            <unclear>
+              <date when="1917-10-01">1/10 - 17</date>
+            </unclear>
+            <lb/>
+            un affettuosissimo
+            <lb/>
+            bacio prima della risposta.
+            <lb/>
+            tuo
+            <name type="person" ref="#giovannino" rend="underline">Giovannino</name>
+          </ab>
+          <lb/>
+          <ab facs="copyright" type="stamp">
+            <choice><abbr>Propr.</abbr><expan>Proprieta</expan></choice> <choice><abbr>art.</abbr><expan>articolo</expan></choice><choice><abbr>riserv.</abbr><expan>riservata</expan></choice>- Casa <choice><abbr>Ed.</abbr><expan>Editrice</expan></choice> d'arte <name>Bestetti</name> e <name>Tuminelli</name> - <name type="place" ref="#milano">Milano</name>
+            <lb/>
+            Ufficio revisione stampa <date when="19-04-1917">19-4-917</date> - <choice><abbr type="number">N.</abbr><expan>Numero</expan></choice><num value="460"> 460</num>
+          </ab>
+        </div>
+        <div type="left-bottom">
+          <ab facs="descrizione_fronte" type="description">
+            <stamp >
+              <name>ambrogio alciati</name>
+            </stamp>
+            <stamp type="description" xml:lang="it">la pace perduta
+            </stamp>
+            <stamp type="description" xml:lang="fr">la paix perdue</stamp>
+            <stamp type="description" xml:lang="de">verlorene ruhe</stamp>
+            <stamp type="description" xml:lang="en">lost peace</stamp>
+          </ab>
+        </div>
+        <div type="right">
+          <ab facs="indirizzo" type="handwritten">
+            <address rend="italic">
+              <addrLine>
+                <abbr>gent</abbr>
+                <unclear>forse *issima di gentilissima
+                </unclear>
+                <abbr>sig</abbr>
+                <unclear>forse *ina di signorina</unclear>
+              </addrLine>
+              <addrLine>
+                <name type="name" ref="#oliva">oliva turtura</name>
+              </addrLine>
+              <addrLine>via girolamo rossi
+                <num value="58">58</num>
+              </addrLine>
+              <addrLine rend="underline">
+                <note type="place">
+                  Ravenna
+                </note>
+              </addrLine>
+            </address>
+          </ab>
+        </div>
+        <div facs="#bottom" type="bottom">
+          <ab>
+            <stamp>
+              <num value="296">
+                296
+              </num>
+            </stamp>
+          </ab>
+        </div>
+      </div>
+    </body>
+  </text>
+  <facsimile>
+    <front>
+      <figure facs="front_figure" type="artwork">
+        <head>la pace perduta di ambrogio alciati</head>
+        <figDesc>
+          donna che si sporge da un balcone
+        </figDesc>
+        <desc>Scansione di scarsa qualità</desc>
+      </figure>
+    </front>
+    <surface xml:id="fronte" type="fronte">
+      <graphic url='7694-086F.jpg' width='1669px' height='1060px'/>
+      <zone xml:id="front_figure" points='13,8 8,1055 1655,1058 1656,14'></zone>
+    </surface>
+    <surface xml:id="retro" type="retro">
+      <graphic url='7694-086R.jpg' width='1633px' height='1046px'/>
+      <zone xml:id="stampo_postale" points='1394,4 1373,60 1369,147 1401,225 1474,287 1537,299 1597,295 1632,269 1632,3'/>
+      <zone xml:id="francobollo" points='1323,85 1321,368 1568,368 1572,299 1510,299 1455,278 1413,242 1384,195 1366,137 1367,81'/>
+      <zone xml:id="descrizione" points='204,82 1191,74 1196,122 1125,130 1115,182 282,196 274,142 200,140'/>
+      <zone xml:id="notamano" points='48,15 47,91 155,82 155,14'/>
+      <zone xml:id="descrizione_fronte" points='141,818 526,814 533,848 768,862 769,892 668,895 667,942 618,950 617,971 457,971 462,869 139,862'/>
+      <zone xml:id="bottom" points='762,991 821,991 824,1026 762,1028'/>
+      <zone xml:id="copyright" points='54,972 84,973 87,830 111,829 112,267 88,267 86,120 67,119'/>
+      <zone xml:id="indirizzo" points='800,330 801,803 877,982 1613,1008 1616,582 1502,396 1051,371 998,307'/>
+      <zone xml:id="messaggio" points='126,242 269,162 281,200 716,193 781,268 781,855 542,845 527,807 257,811 162,589 115,419 114,386'/>
+    </surface>
+  </facsimile>
+</TEI>

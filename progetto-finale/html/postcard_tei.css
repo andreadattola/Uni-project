@@ -1,0 +1,118 @@
+
+ul .heading {font-weight: normal; list-style: none;}
+
+a {
+  color: Lavender;
+  display: block;
+}
+
+h5 {
+  padding: 10px;
+}
+
+  .areas {
+    text-decoration: none;
+    color: inherit;
+  }
+  body {
+
+
+    background-color: rgba(0,0,0,0);
+    background-size: cover;
+    color: Lavender;
+    font-family: Sans-Serif;
+
+  }
+
+  h1 {
+    color: blue;
+  }
+  p {
+    padding: 10px;
+  }
+
+#cover {
+  margin-top: 12%;
+  border-radius: 7px;
+}
+
+#transcription {
+  margin-top: 25%;
+}
+
+#DIVfront_figure {
+  margin-left: 15%;
+}
+
+  .containerL {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    border-radius: 7px;
+    position: fixed;
+    float: left;
+    width: 50%;
+    height: auto;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+  }
+
+.stamp {
+  display: none;
+}
+
+.desc {
+  display: none;
+}
+
+span {
+  visibility: hidden;
+}
+
+.handwritten {
+  margin: 10px;
+}
+
+
+  li {
+  border-style: none;
+  border-width: 1px;
+  }
+  .containerR {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 7px;
+    display: block;
+    float: right;
+    width: 47%;
+    height: auto;
+    border-style: solid;
+    border-width: 1px;
+  }
+  .containerFMiniature {
+
+  }
+
+  div img {
+    width: 100%;
+    height: auto;
+
+  }
+  h5 {
+    text-transform: uppercase;
+  }
+  div {
+    display: inline;
+  }
+  .intro {
+    color: yellow;
+  }
+
+  .printed {
+
+  }
+
+
+
+  span {
+    display: none;
+  }
