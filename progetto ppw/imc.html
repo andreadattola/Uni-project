@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title> Cacolo IMC </title>
+    <link rel="stylesheet" type="text/css" href="css/file.css" />
+    <script  src="javascript/imc.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="contanier">
+      <header>
+        <div id="contbar">
+          <ul id="barradinavigazione">
+            <li class="menu"><a href="index.html">Home</a>
+            <li>
+            <li class="menu"><a href="introduzione.html">Introduzione</a>
+            <li>
+            <li class="menu"><a href="imc.html" id="qua">Calcolo IMC</a>
+            <li>
+            <li class="menu"><a href="quiz.html">Quiz</a>
+            <li>
+            <li class="menu"><a href="about.html"> About</a>
+            <li>
+          </ul>
+        </div>
+        <img class="log11" src="images/dieta.jpg" alt="logo dieta">
+      </header>
+      <br>
+      <h4 id="titleIMC">INDICE MASSA CORPOREA</h4>
+      <div id="infoIMC">
+        <p id="tes" class="cent">
+          L'indice di massa corporea (abbreviato IMC o BMI, dall'inglese body mass index)
+          è un dato biometrico, espresso come rapporto tra peso e quadrato dell'altezza
+          di un individuo ed è utilizzato come un indicatore dello stato di peso forma.
+        </p>
+      </div>
+      <div class="cont">
+        <h2 id="tit">Calcola il tuo IMC</h2>
+        <span id="nspan"> </span>
+        <br>
+        <input type="text" id="altezza" placeholder="Altezza"/>
+        <input type="text" id="peso" placeholder="Peso"/>
+        <br>
+        <br>
+        <input type="button" id="imposta" value="Imposta" />
+        <br>
+        <br>
+        <input type ="text" id="result" placeholder="Valore IMC" readonly/>
+        <input type="text" id="categ" placeholder="Categoria" readonly/>
+      </div>
+
+      <br>
+      <br>
+      <div id="tabella">
+      <table id="imctable">
+	       <tr><td class="red">gravemente sotto peso</td><td> minore 16</td></tr>
+	        <tr><td class="yellow">sotto peso</td><td>tra 16 e 18</td></tr>
+	         <tr><td>normo peso</td><td>tra 18 e 25</td></tr>
+	          <tr><td class="yellow">sovrappeso</td><td>tra 25 e 30</td></tr>
+            <tr><td class="red">obesita grado1</td><td>tra 30 e 35</td></tr>
+             <tr><td class="red">obesita grado2</td><td>tra 35 e 40</td></tr>
+              <tr><td class="red">obesita grado3</td><td>oltre 40</td></tr>
+      </table>
+    </div>
+      <!-- <img id="icmpic" src="images/icmpic.jpg" alt> -->
+      <br>
+
+      <footer>
+        <br />
+        <p class="info">
+          "© 2016" <a href="mailto:andre.d.96@hotmail.it">Andrea dattola</a>
+        </p>
+        <p class="info">Informatica Umanistica, UniPisa</p>
+        <p class="icon">
+          <a href="https://twitter.com/"><img class="logo" alt="twitterlogo" src="images/twit.png"></a>
+          <a href="https://www.facebook.com/"><img class="logo" alt="facebooklogo" src="images/fb.jpg"></a>
+        </p>
+      </footer>
+    </div>
+  </body>
+
+</html>

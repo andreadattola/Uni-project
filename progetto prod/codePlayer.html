@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+    <title>Progetto -Code player</title>
+<script type="text/javascript" src="./jquery.min.js"></script>
+<link href="./jquery-ui/jquery-ui.css" rel="stylesheet">
+    <script src="./jquery-ui/jquery-ui.js"></script>
+
+    <style type="text/css">
+        body{
+         font-family: sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        #bar-code h3{
+            float: left
+            margin: 0 auto;
+        }
+        #bar-code input{
+           position: relative;
+            left: 42%;
+            top: -35px;
+            text-align: center;
+            
+            
+            
+        }
+        .active{
+            background-color: #E8F2FF!important;
+            border-color: chocolate;
+        }
+        #bar-code {
+            width: 100%;
+            background-color: beige;
+           height: 30px;
+        }
+        content iframe{
+            width: 100%;
+            height: 100%;
+             
+        }
+        #content{
+    width:100%;
+    height:100%;
+    background:"white";
+    display:flex;
+    
+        }
+        #content div{
+          width: 100%;
+            height: 100%;
+            
+          
+        }
+        textarea{
+            border-top: none;
+             width: 100%;
+            height: 695px;
+            resize: none;
+            
+        }
+        .outputarea{
+            width: 100%;
+            height: 695px;
+            
+           
+        }
+        #html1{
+            
+             
+            margin: 0 auto;
+            float: left;
+            border-right: 1px solid black;
+
+            background-color: antiquewhite;
+        }
+       #css{
+           
+           margin: 0 auto;
+           float: left;
+            border-right: 1px solid black;
+          
+            background-color: antiquewhite;
+        }
+       #javascript{
+            
+             
+             margin: 0 auto; 
+           float: left;
+            border-right: 1px solid black;
+           
+            background-color: antiquewhite;
+        }
+       #output{
+          
+           
+            margin: 0 auto;
+           float: left;
+            border-right: 1px solid black;
+
+            background-color: antiquewhite;
+        }
+        #javascript{
+            display: none;
+        }
+        #css{
+            display: none;
+        }
+    </style>    
+</head>
+    
+
+<body>
+
+<div id="bar-code">
+   <a href="bot.html.html"> <h3> CodePLayer</h3></a>
+    <input  class ="togglebutton active" type="button" id="htmlbutton" value="html">
+    <input class ="togglebutton" type="button" id="cssbutton" value="Css">
+    <input class ="togglebutton" type="button" id="jsbutton" value="JavaScript">
+    <input class ="togglebutton active" type="button" id="outputbutton" value="OutPut">
+ </div>
+<div id="content">
+<div id="html1"><textarea id="textareahtml"> <p id="prova12">HTML</p></textarea></div>
+<div id="css"><textarea id="textareacss">p {color:green;}</textarea></div>
+<div id="javascript"><textarea id="textareajs" >document.getElementById("prova12").innerHTML = "hello andrea"</textarea></div>
+<iframe id="output" class="outputarea">OUTPUT</iframe>
+    </div>
+    
+    
+     
+
+    <script type="text/javascript">
+        function updateOutput(){
+             $("iframe").contents().find("html").html("<html><head><style type='text/css'>" + $("#textareacss").val() +"</style></head><body>" + $("#textareahtml").val()+ "</body></html>");
+            
+            document.getElementById("output").contentWindow. eval($("#textareajs").val());
+           
+        }
+
+$("#htmlbutton" ).click(function() {
+  $( this ).toggleClass( "active" );
+         
+         
+     
+if($("#htmlbutton").hasClass("active") ){
+    $("#html1").show();
+     
+ }else{
+      $("#html1").hide();
+ }
+       
+});
+$("#cssbutton" ).click(function() {
+  $( this ).toggleClass( "active" );
+         
+         
+     
+if($("#cssbutton").hasClass("active") ){
+    $("#css").show();
+     
+ }else{
+      $("#css").hide();
+ }
+       
+});
+$("#jsbutton" ).click(function() {
+  $( this ).toggleClass( "active" );
+         
+         
+     
+if($("#jsbutton").hasClass("active") ){
+    $("#javascript").show();
+     
+ }else{
+      $("#javascript").hide();
+ }
+       
+});
+$("#outputbutton" ).click(function() {
+  $( this ).toggleClass( "active" );
+         
+         
+     
+if($("#outputbutton").hasClass("active") ){
+    $("#output").show();
+     
+ }else{
+      $("#output").hide();
+ }
+       
+});
+    
+     
+
+$(".togglebutton").hover(function(){
+  $(this).css("background-color", "grey");
+  }, function(){
+  $(this).css("background-color", "#EEEEEE");
+});
+    updateOutput();
+    
+        
+$("textarea").on('change keyup paste', function() {
+    
+  updateOutput();
+    
+   
+    
+});
+
+    </script>
+</body>
+</html>

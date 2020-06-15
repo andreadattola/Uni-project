@@ -1,0 +1,462 @@
+/*- respect flusso----*/
+
+html {
+  position: relative;
+  min-height: 100%;
+  max-width:100%;
+
+}
+
+body{
+  max-width:100%;
+  background-color:#FFFAF0;
+}
+
+header {
+  background: url("../images/sf10.jpg");
+}
+
+li{
+  display:inline;
+}
+
+#infoIMC {
+
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+
+#titleIMC {
+  margin-left: 19%;
+  margin-right: 19%;
+  font-family: 'Oswald', sans-serif;
+    font-size: 2.1em;
+    color: #black;
+    padding: 1% 2%;
+    opacity: 1;
+    max-width: 100%;
+}
+.yellow {
+  background-color: yellow;
+}
+.red{
+  background-color: red;
+}
+#tabella{
+  text-align: center;
+  margin-left:40%;
+  margin-right: auto;
+
+}
+#imctable {
+
+  text-align: center;
+  border-collapse:collapse
+}
+td, th {
+font: 'Poiret One';
+border:1px solid #ddd;
+padding:8px;
+text-align: center;
+}
+}
+
+#quizzino {
+  text-align: center;
+}
+
+#testoDomanda{
+  font-weight: bold;
+}
+
+#myProgress {
+  margin: auto;
+  border: 3px solid green;
+  padding: inherit;
+  width: 70%;
+  background-color: #d8650d;
+}
+
+#myBar {
+  text-align: center;
+  width: 0%;
+  height: 30px;
+  background-color: green;
+}
+
+#contbar{
+  width:120%;
+}
+
+#barradinavigazione{
+
+  float:right;
+  margin-top:10%;
+  margin-right:20%;
+  word-spacing: normal;
+  font-family: 'Bitter', sans-serif;
+  height: auto;
+}
+
+.menu{
+  margin-left:0.4em;
+}
+
+.menu{
+  color:#ffffff;
+  font-size:1.75em;
+  text-decoration: none;
+}
+
+.menu a{
+  color:#ffffff;
+  text-decoration: none;
+}
+
+.menu a:hover{
+  color:white;
+}
+
+a#qua{
+  color:black;
+}
+
+.log11{
+  width:25%;
+  max-width:100%;
+  margin-left:8%;
+  margin-top:3%;
+  margin-bottom: 4%;
+  border:5px solid white;
+  border-radius:400px;
+}
+
+#logo{
+  width:11%;
+  max-width:100%;
+  margin-left:15%;
+  margin-top:6.54%;
+}
+
+
+
+footer{
+  background: url("../images/sf10.jpg");
+  padding-bottom:4%;
+  font-family: 'Poiret One', cursive;
+  color:white;
+  clear:both;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  max-height: 25%;
+}
+
+
+
+footer a{
+  color:blue;
+}
+
+.info{
+  margin-left:5%;
+  max-width:50%;
+}
+
+
+.icon{
+  margin-left: 85%;
+  max-width: 15%;
+  display: inline;
+}
+
+.logo{
+  max-width:100%;
+  width:5.41%;
+  margin-top:-10.41%;
+}
+
+.icon a {
+  color: #555;
+}
+
+.icon a:hover{
+}
+
+h1{
+  padding-bottom:4%;
+  font-family: 'Poiret One';
+  font-size: 255%;
+  color:blue;
+  clear:both;
+  position: absolute;
+  margin-top:0%;
+  text-align:center;
+}
+
+
+#centrale {
+  padding-bottom: 225px;
+  margin-bottom: 65px;
+}
+
+.foto{
+  max-width:100%;
+  width:65%;
+  margin-left:18.25%;
+  margin-top:9%;
+}
+
+#log11{margin-right:20.54%;
+  max-width:100%;
+  width:5.41%;
+  margin-top:10.41%;
+
+}
+/*- pag2----*/
+#prova{
+  font-family: 'Oswald', sans-serif;
+      font-size: 2.1em;
+      color: black;
+      padding: 1% 2%;
+      opacity: 1;
+      max-width: 100%;
+}
+.cont{
+
+  width:100%;
+  max-width:100%;
+  margin-top: 3em;
+  text-align: center;
+}
+
+h2{
+  font-family:"Farsan", cursive;
+  font-size:3.6em;
+  color:#FFC0CB;
+  text-transform:uppercase;
+  padding: 2% 3%;
+  opacity:2;
+  max-width:100%;
+}
+h3{
+  font-family: "Farsan", cursive;
+  font-size: 3.1em;
+  color:#FFC0CB;
+  padding: 1% 2%;
+  opacity: 1;
+  max-width: 100%;
+}
+
+#incipit{max-width:100%;
+  width:50%;
+  padding:2% 3%;
+  margin-left:25%;
+  margin-right:25%;
+  background: linear-gradient(#FFF5EE ,	#FFF5EE);
+  border-radius:12%;
+}
+
+#prefazione{
+  font-family:'Oswald', 'sans-serif';
+  color: 		#3D3D3D;
+
+}
+
+#pic2 {
+
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  margin-left:30%;
+  max-width:100%;
+  width:50.4%;
+  border-radius:5%;
+}
+
+#pic2 img {
+  width: inherit;
+  height: inherit;
+}
+
+#pic2:before {
+  display: block;
+  background-color: rgb(0, 0, 0);
+  content: "";
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  width: 96%;
+  z-index: 2;
+}
+
+#pic2:after {
+  display: block;
+  background-color: rgba(240, 124, 15, 0.8);
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  color: #ffffff;
+  content: attr(title);
+  left: -100%;
+  padding: 2% 3%;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 5%;
+  width: 98%;
+  z-index: 3;
+}
+
+#pic2 img {
+  border: none;
+  display: block;
+  z-index: 1;
+}
+
+#pic2:before,
+#pic2:after,
+#pic2 img {
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+#pic2:hover img {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#pic2:hover:before {
+  opacity: 0.3;
+}
+
+#pic2:hover:after {
+  left: 0;
+}
+
+#pic2{
+  margin-bottom:5%;
+}
+
+#tit{
+  max-width: 100%;
+  font-family:'Poiret One', cursive;
+  font-size:2.5em;
+  color:#465457;
+  padding: 2% 2%;
+  opacity:2;
+  text-align: center;
+}
+
+#contenuto{
+  max-width:100%;
+  width:65%;
+  margin-left:15%;
+  margin-right:52%;
+  background: linear-gradient(#F8F8F8 ,#E0E0E0);
+  padding: 3% 4%;
+  border: 2px;
+  border-radius:15%;
+}
+
+#pic3{
+  height: 50vh;
+  width: 80vw;
+  margin-left: 10%;
+  margin-top: 10%;
+  text-align: center;
+  border: 2px solid #008080;
+    box-shadow: 10px 10px 5px #888888;
+}
+#icmpic{
+  width:36.4%;
+  max-width:100%;
+  margin-left:29%;
+  margin-right:5%;
+  padding: 1% 3%;
+  opacity:5;
+  border-radius:16%;
+}
+
+#federazioni{
+  max-width:100%;
+  width:65%;
+  margin-top:5.1%;
+  margin-left:15%;
+  margin-right:52%
+}
+
+.cent{
+  max-width:100%;
+  width:100%;
+  border-radius:10% ;
+  padding: 2% 3%;
+  max-width:100%;
+  background: linear-gradient(#F8F8F8 ,#E0E0E0);
+  max-width:100%;
+  font-family:'Oswald', 'sans-serif';
+  color: #3D3D3D;
+}
+
+#tes{
+  max-width:100%;
+  background: linear-gradient(#F8F8F8 ,#E0E0E0);
+  max-width:100%;
+  font-family:'Oswald', 'sans-serif';
+  color: #3D3D3D;
+}
+
+.logofif{display:inline;
+  width:10%;
+  margin-right:5%;
+  margin-left:10%;
+  margin-bottom:5%;
+  width: 28%;
+  border-radius: 90px;
+  border:4px solid #a1a1a1;
+  box-shadow: 10px 10px 5px #B8B8B8;
+}
+
+
+      /* pag3 */
+      .CASELLE {
+        font: 12px Verdana, Arial, Helvetica, sans-serif;
+        width: 170px;
+        border-radius:20%;
+      }
+
+      .CASELLE:active {
+        background: green;
+      }
+
+      #tab{margin-top:5%; padding: 2% 7%;}
+
+.risposta {
+
+  display: list-item;
+}
+/* pag about */
+p{
+  font-style: oblique;
+}
+div.split2 div{
+    margin-left: 50%;
+    margin-right: 50%;
+    width: 45%;
+    padding: 0 2%;
+    }
+    h4{
+    	font-family: 'Oswald', sans-serif;
+        font-size: 2.1em;
+        color: black;
+        padding: 1% 2%;
+        opacity: 1;
+        max-width: 100%;
+
+    }
